@@ -1,0 +1,12 @@
+<div>
+    <form id="contactMe" [formGroup]="form" >
+        <h2>Login</h2>
+        <fieldset>
+        <input autocomplete="off" placeholder="Username" type="email" formControlName="username">
+        <input placeholder="Password..." tabindex="3" type="password" formControlName="password">
+        <button name="submit" type="submit" id="contactSubmit" [disabled] ="!form.valid" (click)="login()">Login</button>
+        <h4>{{message}}</h4>
+        <a href="http://localhost:8000/register/"><h5>Register</h5></a>
+        </fieldset>
+  </form>
+</div>
